@@ -18,3 +18,20 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.text {
+  text-align: inherit;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.suptittle {
+  display: inline;
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+}
