@@ -19,7 +19,7 @@ function onInputCountry(e) {
   }
   fetchCountries(inputValue)
     .then(value => {
-      console.log(value);
+      // console.log(value);
       if (value.length >= 2 && value.length <= 10) {
         clearMurkup();
         createCountryInfo(value);
