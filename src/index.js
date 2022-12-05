@@ -69,7 +69,7 @@ function createMurkupCountryInfo(item) {
 // -_-_-_-_-_-_ /  Розмітка Інфо -_-_-_-_-_-_
 
 function showError() {
-  Notiflix.Notify.warning('Oops, there is no country with that name');
+  Notiflix.Notify.failure('Oops, there is no country with that name');
 }
 
 function clearMurkup() {
