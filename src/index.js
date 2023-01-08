@@ -35,7 +35,7 @@ function onInputCountry(e) {
     .catch(showError);
 }
 
-// _________  РОзмітка списку ____________
+// _________  РОзмітка ІНФО країни ____________
 
 function createListItem(item) {
   return `<li class="list-item">
@@ -52,9 +52,9 @@ function createMurkup(array) {
   listCountry.insertAdjacentHTML('afterbegin', generateContent);
 }
 
-// _________ / РОзмітка списку____________
+// _________ / РОзмітка ІНФО країни____________
 
-// -_-_-_-_-_-_ Розмітка Інфо -_-_-_-_-_-_
+// -_-_-_-_-_-_ Розмітка списку -_-_-_-_-_-_
 
 function createCountryInfo(array) {
   const generateCountryInfo = array.map(arr => createMurkupCountryInfo(arr));
@@ -66,7 +66,7 @@ function createMurkupCountryInfo(item) {
     <p class="suptittle">${item.name.common}</p></span>
   `;
 }
-// -_-_-_-_-_-_ /  Розмітка Інфо -_-_-_-_-_-_
+// -_-_-_-_-_-_ /  Розмітка списку -_-_-_-_-_-_
 
 function showError() {
   Notiflix.Notify.failure('Oops, there is no country with that name');
